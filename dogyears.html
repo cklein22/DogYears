@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>
+    Dog Years
+    </title>
+    <script language = "JavaScript">
+      //this function converts human years to dog years. -Emma
+      function dog(form) {
+        form.DogYears.value = form.HumanYears.value/7;
+      }
+      //This function converts human years to dog years. -A
+      function human(form) {
+        form.HumanYear.value=form.DogYear.value*7;
+      }
+    </script>
+  </head>
+
+  <body>
+      <center>
+        <form>
+           // User is asked how old they are and they enter their age in human years. -CK
+          How old are you?
+          <input type = "text" name = "HumanYears" size = 15>
+            <br/>
+           // User clicks on a button to start the calculation of human years to dog years. -S
+          <input type = "button" value = "Calculate" onclick = "dog(this.form)">
+          <br/>
+          <p>
+          You are:
+          <input type = "text" name = "DogYears" size = 15>
+          in dog years.
+          <br/>
+          <br/>
+            // User is asked how old their dog is in dog years and in line 36, they enter their dog's age. -R
+          How old is your dog?
+          <input type = "text" name = "DogYear" size = 15>
+          <br/>
+          // User clicks on a button to calculate to human years - L
+          <input type = "button" value = "Calculate" onclick = "human(this.form)">
+          //user clicks on button to convert dog years to human years. -Emma
+          <br/>
+          <p>
+           //tells you dogs age in dog years. -WB
+          Your dog is:
+          <input type = "text" name = "HumanYear" size = 15>
+          in human years.
+          </p>
+        </form>
+      </center>
+  </body>
+
+</html>
